@@ -96,11 +96,11 @@ a:hover {
 
 .titre {
     margin-top: 0;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .texte {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 30px;
 }
 
@@ -350,6 +350,13 @@ footer img {
 
 
 @media screen and (min-width: 767px) {
+    .titre {
+        font-size: 50px;
+    }
+
+    .texte {
+        font-size: 20px;
+    }
 
     #who p {
         margin: 0 10%;
@@ -417,6 +424,14 @@ footer img {
 
     #Menu {
         display: none;
+    }
+
+    .titre {
+        font-size: 50px;
+    }
+
+    .texte {
+        font-size: 20px;
     }
 
     .involved {
