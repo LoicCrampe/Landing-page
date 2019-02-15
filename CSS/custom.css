@@ -1,0 +1,440 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-family: Arvo;
+}
+
+/*-----------------Nav-----------------*/
+.header {
+    background-color: black;
+    display: inline-block;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header img {
+    margin-top: 1%;
+    margin-left: 15%;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    display: none;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: white;
+}
+
+.fa.fa-bars {
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.collapse {
+    border-top: 2px solid black;
+    box-shadow: 0 0 3px 0 gray;
+}
+
+.subMenu {
+    width: 100%;
+    text-align: center;
+}
+
+.Lien {
+    display: none;
+}
+
+/*-----------------Home-----------------*/
+
+#home {
+    background-image: url("../images/hero-image.jpg");
+    background-position: top;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#home .content {
+    max-width: 100%;
+}
+
+.titre,
+.texte {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10px;
+}
+
+.titre {
+    margin-top: 0;
+    font-size: 50px;
+}
+
+.texte {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.learn {
+    color: white;
+    border: none;
+    background-color: #d43f3a;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+
+.code {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/*-----------------Who-----------------*/
+
+#who {
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+#who h1 {
+    color: red;
+}
+
+hr {
+    width: 10%;
+    border: 1px solid red;
+}
+
+#who p {
+    font-size: 20px;
+    padding-bottom: 30px;
+    margin: 0 5%;
+}
+
+.red {
+    color: red;
+}
+
+/*-----------------Get involved-----------------*/
+
+#get-involved {
+    background-color: #f2f2f2;
+    width: 100%;
+    text-align: center;
+}
+
+#get-involved h1 {
+    color: red;
+    padding-top: 5%;
+}
+
+.involved {
+    margin: 0 5%;
+}
+
+.involved h1,
+.involved button {
+    color: red;
+}
+
+.involved h1 {
+    width: 100%;
+}
+
+.involved button {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: white;
+    margin: 2%;
+}
+
+.fa.fa-user {
+    position: relative;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fa.fa-pencil {
+    position: relative;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fa.fa-money {
+    position: relative;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.students {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.educators {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sponsors {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.students {
+    grid-template-columns: auto;
+    grid-template-areas:
+        "TiStu"
+        "TexStu"
+        "ButStu"
+}
+
+.educators {
+    grid-template-columns: auto;
+    grid-template-areas:
+        "TiEdu"
+        "TexEdu"
+        "ButEdu"
+}
+
+.sponsors {
+    grid-template-columns: auto;
+    grid-template-areas:
+        "TiSpo"
+        "TexSpo"
+        "ButSpo"
+}
+
+/*-----------------Footer-----------------*/
+
+footer {
+    background-color: #f74c3c;
+}
+
+footer img {
+    padding-top: 10%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+#back-to-top {
+    position: fixed;
+    color: transparent;
+    background-color: black;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    right: 1%;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*-----------------Grid-----------------*/
+
+.students {
+    grid-area: Students;
+}
+
+.TiStu {
+    grid-area: TiStu;
+}
+
+.TexStu {
+    grid-area: TexStu;
+}
+
+.ButStu {
+    grid-area: ButStu;
+}
+
+.educators {
+    grid-area: Educators;
+}
+
+.TiEdu {
+    grid-area: TiEdu;
+}
+
+.TexEdu {
+    grid-area: TexEdu;
+}
+
+.ButEdu {
+    grid-area: ButEdu;
+}
+
+.sponsors {
+    grid-area: Sponsors;
+}
+
+.TiSpo {
+    grid-area: TiSpo;
+}
+
+.TexSpo {
+    grid-area: TexSpo;
+}
+
+.ButSpo {
+    grid-area: ButSpo;
+}
+
+/*-----------------Media Queries-----------------*/
+
+
+@media screen and (min-width: 767px) {
+
+    #who p {
+        margin: 0 10%;
+    }
+
+    .involved {
+        margin: 0 10%;
+    }
+
+    .students {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "TiStu"
+            "TexStu"
+            "ButStu"
+    }
+
+    .educators {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "TiEdu"
+            "TexEdu"
+            "ButEdu"
+    }
+
+    .sponsors {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "TiSpo"
+            "TexSpo"
+            "ButSpo"
+    }
+
+    .Lien {
+        display: inline-block;
+        color: white;
+        float: right;
+        margin-top: 1%;
+        margin-left: 2%;
+        width: 400px;
+    }
+
+    a {
+        margin-left: 5%;
+    }
+
+    #Menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .Lien {
+        display: inline-block;
+        color: white;
+        float: right;
+        margin-top: 1%;
+        margin-left: 2%;
+        width: 500px;
+    }
+
+    a {
+        margin-left: 5%;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+    .involved {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas:
+            "Students Educators Sponsors"
+    }
+
+    .students {
+        margin: 0 3%;
+    }
+
+    .educators {
+        margin: 0 3%;
+    }
+
+    .sponsors {
+        margin: 0 3%;
+    }
+}
